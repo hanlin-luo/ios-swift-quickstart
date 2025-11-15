@@ -1,0 +1,19 @@
+{
+	"name": "xcode build server",
+	"version": "0.2",
+	"bspVersion": "2.0",
+	"languages": [
+		"c",
+		"cpp",
+		"objective-c",
+		"objective-cpp",
+		"swift"
+	],
+	"argv": [
+		"/opt/homebrew/bin/xcode-build-server"
+	],
+	"workspace": "/Users/lmc/Codes/iOS/xt/ios-swift-quickstart/ios-swift-quickstart.xcodeproj/project.xcworkspace",
+	"build_root": "/Users/lmc/Library/Developer/Xcode/DerivedData/ios-swift-quickstart-bswjideeectnzichhitcwvrdoukw",
+	"scheme": "ios-swift-quickstart",
+	"kind": "xcode"
+}

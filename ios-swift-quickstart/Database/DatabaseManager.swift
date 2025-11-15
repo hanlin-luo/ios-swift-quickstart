@@ -11,7 +11,7 @@ class DatabaseManager {
     private let queryUpdatesSubject = CurrentValueSubject<[Hotel], Never>([])
     
     init() {
-        Database.log.console.level = .info
+        LogSinks.console = ConsoleLogSink(level: .info, domains: .database)
         initializeDatabase()
     }
     
@@ -48,8 +48,9 @@ class DatabaseManager {
     }
     
     private func stopListeningForChanges() {
-        guard let lastQueryToken = lastQueryToken else { return }
-        lastQuery?.removeChangeListener(withToken: lastQueryToken)
+        lastQueryToken?.remove()
+        lastQueryToken = nil
+        lastQuery = nil
     }
     
     func queryElements(descending: Bool = false, textSearch: String? = nil) {
@@ -154,14 +155,13 @@ class DatabaseManager {
             }
             // Create replicators to push and pull changes to and from the cloud.
             let targetEndpoint = URLEndpoint(url: configuration.capellaEndpointURL)
-            var replConfig = ReplicatorConfiguration(target: targetEndpoint)
+            guard let collection else { return }
+            let collectionConfig = CollectionConfiguration(collection: collection)
+            var replConfig = ReplicatorConfiguration(collections: [collectionConfig], target: targetEndpoint)
             replConfig.continuous = true
             
             // Add authentication.
             replConfig.authenticator = BasicAuthenticator(username: configuration.username, password: configuration.password)
-            
-            guard let collection else { return }
-            replConfig.addCollection(collection)
             
             // Create replicator (make sure to add an instance or static variable named replicator)
             replicator = Replicator(config: replConfig)

@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Remote Capella endpoint URL</key>
-	<string></string>
+	<string>wss://wb3vg5504spr9anm.apps.cloud.couchbase.com:4984/obliquezhouchaochen</string>
 	<key>Authentication</key>
 	<dict>
 		<key>User name</key>
-		<string></string>
+		<string>one-more-mobile</string>
 		<key>Password</key>
-		<string></string>
+		<string>-8-Eq9ajFiMMtnE</string>
 	</dict>
 </dict>
 </plist>
