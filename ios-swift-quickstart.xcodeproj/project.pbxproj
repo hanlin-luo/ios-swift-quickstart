@@ -372,7 +372,7 @@
 			);
 			mainGroup = EC132B0E2D81B2890020C772;
 			packageReferences = (
-				EC132B7D2D81B3BB0020C772 /* XCRemoteSwiftPackageReference "couchbase-lite-ios" */,
+				EC132B7D2D81B3BB0020C772 /* XCRemoteSwiftPackageReference "couchbase-lite-swift" */,
 			);
 			productRefGroup = EC132B182D81B2890020C772 /* Products */;
 			projectDirPath = "";
@@ -604,7 +604,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-swift-quickstart/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QRT4DDQ77F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Couchbase Hotel Manager";
@@ -635,7 +635,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-swift-quickstart/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QRT4DDQ77F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Couchbase Hotel Manager";
@@ -772,7 +772,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EC132B7D2D81B3BB0020C772 /* XCRemoteSwiftPackageReference "couchbase-lite-ios" */ = {
+		EC132B7D2D81B3BB0020C772 /* XCRemoteSwiftPackageReference "couchbase-lite-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/couchbase/couchbase-lite-swift.git";
 			requirement = {
@@ -785,7 +785,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		EC132B7E2D81B3BB0020C772 /* CouchbaseLiteSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC132B7D2D81B3BB0020C772 /* XCRemoteSwiftPackageReference "couchbase-lite-ios" */;
+			package = EC132B7D2D81B3BB0020C772 /* XCRemoteSwiftPackageReference "couchbase-lite-swift" */;
 			productName = CouchbaseLiteSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

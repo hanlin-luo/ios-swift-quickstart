@@ -3,6 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>Remote Capella endpoint URL</key>
+	<string>ws://192.168.1.224:4984/travel-sample</string>
+	<key>Authentication</key>
+	<dict>
+		<key>User name</key>
+		<string>sg-user</string>
+		<key>Password</key>
+		<string>iwerther</string>
+	</dict>
+</dict>
+</plist>
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Remote Capella endpoint URL</key>
 	<string>wss://wb3vg5504spr9anm.apps.cloud.couchbase.com:4984/obliquezhouchaochen</string>
 	<key>Authentication</key>
 	<dict>
@@ -12,4 +28,4 @@
 		<string>-8-Eq9ajFiMMtnE</string>
 	</dict>
 </dict>
-</plist>
+</plist> -->
